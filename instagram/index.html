@@ -12,12 +12,15 @@
 		.post-list {
 			display: grid;
 			grid-template-columns: repeat(3, minmax(100px, 293px));
+			justify-content: center;
+			grid-gap: 28px;
+			align-items: center;
+			margin:0;
 		}
 
 		.post {
 			cursor: pointer;
 			position: relative;
-			width: 200px;
 			display: block;
 		}
 
@@ -56,6 +59,13 @@
 			text-align: center;
 			display: inline-block;
 		}
+
+		@media screen and (max-width: 768px) {
+			.post-list {
+				grid-gap: 3px;
+			}
+		}
+
 	</style>
 </head>
 <body>
